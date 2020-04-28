@@ -1,0 +1,11 @@
+name: base
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - papermill
+  - jupytext
+  - nbdime
+  - r-base
+  - r-devtools
+  - r-codetools
