@@ -9,9 +9,10 @@
     - [Updating the pipeline](#updating-the-pipeline)
     - [Reproducibility](#reproducibility)
   - [Main arguments](#main-arguments)
-    - [`-profile`](#profile)
-    - [`--reads`](#reads)
-    - [`--single_end`](#singleend)
+    - [`-profile`](#-profile)
+    - [`--reads`](#--reads)
+    - [`--accession_list`](#--accession_list)
+    - [`--single_end`](#--single_end)
     - [Library strandedness](#library-strandedness)
   - [FeatureCounts Extra Gene Names](#featurecounts-extra-gene-names)
     - [Default "`gene_name`" Attribute Type](#default-%22genename%22-attribute-type)
@@ -169,6 +170,26 @@ Please note the following requirements:
 3. When using the pipeline with paired end data, the path must use `{1,2}` notation to specify read pairs.
 
 If left unspecified, a default pattern is used: `data/*{1,2}.fastq.gz`
+
+### `--accession_list`
+
+As an alternative to defining input data with `--reads`, you can specify a list of SRA run (SRR) accession codes to retrieve data from the [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra). Use this parameter to specify the filepath. It has to be a single column file without a header row as shown in the example below.
+
+```bash
+--accession_list '[path to SRR accession list]'
+```
+
+#### Example accession list
+
+```console
+SRR3623945
+SRR3623928
+```
+
+#### **NOTES**
+
+- The option `--accession_list` is alternative to `--input` and they cannot be used in conjuction.
+- The accession list must be homogeneous, with SRRs of either only single-end or only paired-end reads.
 
 ### `--single_end`
 

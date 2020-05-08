@@ -1,2 +1,1 @@
-## How to use templates
-
+# How to use templates

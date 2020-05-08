@@ -16,8 +16,8 @@ RUN find /opt/scripts/ -type f -iname "*.py" -exec chmod +x {} \; && \
     find /opt/scripts/ -type f -iname "*2bed" -exec chmod +x {} \;
 
 # Add conda installation dir to PATH (instead of doing 'conda activate')
-ENV PATH /opt/conda/envs/nf-core-rnaseq-1.4.3dev/bin:$PATH
+ENV PATH /opt/conda/envs/nf-core-rnaseq-1.4.3.rsem/bin:$PATH
 ENV PATH /opt/scripts:$PATH
 
 # Dump the details of the installed packages to a file for posterity
-RUN conda env export --name nf-core-rnaseq-1.4.3dev > nf-core-rnaseq-1.4.3dev.yml
+RUN conda env export --name nf-core-rnaseq-1.4.3.rsem > nf-core-rnaseq-1.4.3.rsem.yml

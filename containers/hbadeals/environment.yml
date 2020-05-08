@@ -9,3 +9,4 @@ dependencies:
   - r-base
   - r-devtools
   - r-codetools
+  - r-ggplot2

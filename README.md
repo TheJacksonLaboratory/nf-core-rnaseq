@@ -10,6 +10,8 @@
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg)](http://bioconda.github.io/)
 [![Docker](https://img.shields.io/docker/automated/nfcore/rnaseq.svg)](https://hub.docker.com/r/nfcore/rnaseq/)
 
+>![The Jackson Laboratory logo](https://raw.githubusercontent.com/TheJacksonLaboratory/coronavirus-nf/fix-nf-core-lint/assets/jax_logo_tiny.png) **NOTE**: This is a fork of the [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline modified for use from the researchers of The Jackson Laboratory. For the stable, peer-reviewed version of this pipeline please visit [nf-core/rnaseq](https://github.com/nf-core/rnaseq).
+
 ## Introduction
 
 **nf-core/rnaseq** is a bioinformatics analysis pipeline used for RNA sequencing data.
